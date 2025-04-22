@@ -1,0 +1,19 @@
+[project]
+name = "agents"
+version = "0.1.0"
+description = "An agentic package"
+readme = "README.md"
+authors = [
+    { name = "Meek Msaki", email = "meek10x@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "smolagents[litellm]>=1.14.0",
+]
+
+[project.scripts]
+agents = "agents:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
